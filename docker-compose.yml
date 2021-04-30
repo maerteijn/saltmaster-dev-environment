@@ -4,7 +4,7 @@ services:
     container_name: saltmaster-local
     build:
       context: .
-      dockerfile: ./docker/dockerfile-saltmaster
+      dockerfile: ./dockerfiles/dockerfile-saltmaster
     ports:
       - 4505:4505
       - 4506:4506
@@ -19,7 +19,7 @@ services:
     container_name: saltminion-ubuntu-local
     build:
       context: .
-      dockerfile: ./docker/dockerfile-saltminion-ubuntu
+      dockerfile: ./dockerfiles/dockerfile-saltminion-ubuntu
 
     depends_on:
        - saltmaster-local
