@@ -8,6 +8,9 @@ Usage:
 `docker-compose up`
 
 
+See the docker containers running:
+`docker ps`
+
 To run a shell on the saltmaster:
 `docker exec -ti saltmaster-local /bin/bash`
 
